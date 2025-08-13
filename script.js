@@ -29,9 +29,9 @@ function verificar(){
             }else if (idade < 21 ){
                 img.setAttribute('src','jovenM.jpg')
             }else if (idade < 50){
-                img.setAttribute('src','adultoM.jpg')
+                img.setAttribute('src','adultaM.jpg')
             }else{
-                img.setAttribute('src','velhoM.jpg')
+                img.setAttribute('src','velhaM.jpg')
             }
             
              
@@ -43,4 +43,5 @@ function verificar(){
         img.style.width = '250px'
         img.style.padding = '15px'
     }
+
 }
