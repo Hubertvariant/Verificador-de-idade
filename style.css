@@ -1,24 +1,46 @@
-body{
-background: rgb(125, 125, 255);
-font: normal 15pt Arial;
+/* Estilo geral */
+body {
+    background: rgb(125, 125, 255);
+    font: normal 15pt Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header{
-color: #ffffff;
-text-align: center;
+/* Cabeçalho */
+header {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
 }
 
-section{
-background: white;
-border-radius: 10px;
-padding: 15px;
-width: 500px;
-margin: auto;
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+/* Conteúdo principal */
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 90%;          /* Responsivo */
+    max-width: 500px;    /* Limite para telas grandes */
+    margin: 20px auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box; /* Garante que padding não aumente a largura */
 }
 
-footer{
-color: #ffffff;
-text-align: center;
-font-style: italic;
+/* Rodapé */
+footer {
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+    padding: 15px 10px;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+    body {
+        font-size: 13pt;
+    }
+
+    section {
+        padding: 10px;
+        width: 95%;
+    }
 }
